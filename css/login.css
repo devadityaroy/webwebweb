@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+	font-size: 14px;
+}
+
+:root {
+	--primary-color: #080128;
+	--container-background-color: #e8e8e8;
+	--text-color: #ffffff;
+	--body-color: #111619;
+  }
+
+  
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+	background: var(--body-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: -20px 0 20px;
+	/*height: 100vh;*/
+}
+
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+  }
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, #010713, #010713);
+  }
+  
+
+.hero {
+	width: 100%;
+	height: 100%;
+	/*
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+	background-position: center;
+	background-size: cover;
+	*/
+
+	position: absolute;
+}
+
+.login-box {
+	width: 380px;
+	height: 480px;
+	background: #00001b;
+	position: relative;
+	margin: 6% auto;
+	padding: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.3);
+	
+	/* overflow:hidden is important to hide windows */
+}
+
+.button-box {
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 10px 9px #b58fda8d;
+	border-radius: 30px;
+}
+
+.toggle-btn {
+	background: transparent;
+	padding: 10px 30px;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	position: relative;
+	color: #fff;
+}
+
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #410279;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.social-icons {
+	margin: 30px auto;
+	text-align: center;
+}
+
+.social-icons img {
+	width: 30px;
+	margin: 0 12px;
+	box-shadow: 0 0 20px 0 #7f7f7f3d;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.input-group {
+	position: absolute;
+	width: 280px;
+	top: 180px;
+	transition: .5s;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: 2.125em;
+}
+
+.input-field {
+	outline: none;
+	background: transparent;
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #fff;
+}
+
+.submit-btn {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #410279;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	color: #fff;
+}
+
+.check-box{
+	margin: 30px 10px 30px 0;
+}
+
+span {
+	color:white;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+
+#login {
+	left:190px;
+}
+
+#register {
+	left:-200px;
+}
+

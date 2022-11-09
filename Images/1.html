@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Images with srcset and sizes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<style>
+  html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Layout For Smaller Screens */
+img {
+  display: block;
+  margin: 0 auto 0 auto; /* Centred */
+  width: 100%;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+/* Layout For Larger Screens */
+@media screen and (min-width: 40em) {
+  img {
+    padding: 0 2em 0 2em;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<img 
+src="../img/2.jpg"
+alt="Mars Curiosity Rover takes an excellent selfie."
+srcset="
+../img/2.jpg 1120w,
+../img/2.jpg 720w,
+../img/2.jpg 400w"
+sizes="
+     (min-width: 40em) calc(66.6vw - 4em),
+     100vw"
+>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
